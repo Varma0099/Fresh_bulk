@@ -100,7 +100,7 @@ function OrderCheckout() {
         status: 'Pending'
       };
       
-      const response = await axios.post("http://localhost:5000/api/orders",{buyer_name: data.buyerName, buyer_contact:data.email,delivery_address:data.address,items:JSON.stringify(orderData.items),status:"Pending"});   
+      const response = await axios.post("https://fresh-bulk.onrender.com/api/orders",{buyer_name: data.buyerName, buyer_contact:data.email,delivery_address:data.address,items:JSON.stringify(orderData.items),status:"Pending"});   
       setOrderId(response.data.id);
       setOrderSuccess(true);
       clearCart();

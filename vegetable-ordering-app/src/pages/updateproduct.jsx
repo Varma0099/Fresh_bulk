@@ -24,7 +24,7 @@ export default function ProductUpdateForm() {
     const fetchProduct = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch(`http://localhost:5000/api/products/${productId}`);
+        const response = await fetch(`https://fresh-bulk.onrender.com/api/products/${productId}`);
         
         if (!response.ok) {
           throw new Error('Product not found');
@@ -70,7 +70,7 @@ export default function ProductUpdateForm() {
     setSuccess(false);
     
     try {
-      const response = await fetch(`http://localhost:5000/api/products/${product.id}`, {
+      const response = await fetch(`https://fresh-bulk.onrender.com/api/products/${product.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

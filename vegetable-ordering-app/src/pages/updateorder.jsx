@@ -34,7 +34,7 @@ export default function OrderUpdateForm() {
     const fetchOrder = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch(`http://localhost:5000/api/orders/${orderId}`);
+        const response = await fetch(`https://fresh-bulk.onrender.com/api/orders/${orderId}`);
         
         if (!response.ok) {
           throw new Error('Order not found');
@@ -119,7 +119,7 @@ export default function OrderUpdateForm() {
     setSuccess(false);
     
     try {
-      const response = await fetch(`http://localhost:5000/api/orders/${order.id}`, {
+      const response = await fetch(`https://fresh-bulk.onrender.com/api/orders/${order.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

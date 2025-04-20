@@ -11,8 +11,8 @@ export default function OrderProductManagement() {
 
   // Placeholder API URLs - replace with your actual APIs
   const API_URLS = {
-    orders: 'http://localhost:5000/api/orders',
-    products: 'http://localhost:5000/api/products'
+    orders: 'https://fresh-bulk.onrender.com/api/orders',
+    products: 'https://fresh-bulk.onrender.com/api/products'
   };
 
   // Redirect URLs for update operations

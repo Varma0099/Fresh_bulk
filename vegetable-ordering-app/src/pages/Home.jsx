@@ -14,7 +14,7 @@ function Home() {
     const fetchFeaturedProducts = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("http://localhost:5000/api/products");
+        const response = await axios.get("https://fresh-bulk.onrender.com/api/products");
         // For featured products, we'll just take the first 4 items
         // In a real app, you might have a 'featured' flag in your product data
         setFeaturedProducts(response.data.slice(0, 4));

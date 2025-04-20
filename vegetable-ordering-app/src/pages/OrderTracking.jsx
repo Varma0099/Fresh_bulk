@@ -24,7 +24,7 @@ function OrderTracking() {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get("http://localhost:5000/api/orders/" + orderIdToFetch);
+      const response = await axios.get("https://fresh-bulk.onrender.com/api/orders/" + orderIdToFetch);
       setOrder(response.data);
       setSearched(true);
     } catch (err) {

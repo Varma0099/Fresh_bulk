@@ -124,5 +124,5 @@ app.delete("/api/products/:id", async (req, res) => {
 });
 
 app.listen(5000, () => {
-  console.log("🚀 Server started on http://localhost:5000");
+  console.log("🚀 Server started on https://fresh-bulk.onrender.com");
 });

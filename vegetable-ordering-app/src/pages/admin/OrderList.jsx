@@ -12,7 +12,7 @@ const OrdersList = () => {
   const fetchOrders = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:5000/api/orders");
+      const response = await axios.get("https://fresh-bulk.onrender.com/api/orders");
       setOrders(response.data);
       setError('');
     } catch (err) {
